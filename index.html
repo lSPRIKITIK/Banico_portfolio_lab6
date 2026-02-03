@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">MyPortfolio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="hero">
+            <section id="home" class="hero_content">
+                <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-md-start">
+                    <img src="images/profile.jfif" class="profile mb-4 mb-md-0" style="max-width:400px;" alt="Profile">
+                    <div class="hero-text text-center text-md-start ms-md-custom">
+                        <h1 class="greet">Hi, I'm Kyle 👋</h1>
+                        <p class="status">A Beginner Web Developer</p>
+                        <div class="view_work">
+                            <a href="#projects" id="cards" class="btn btn-light btn-lg mt-1">View My Work</a>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <section id="services" class="section-padding">
+                <div id="services_container" class="container">
+                    <h2 class="text-center mb-5">My Services</h2>
+                    <div id="my_services"class="row text-center">
+                        <div class="col-md-4">
+                            <div id="cards"class="card p-4">
+                                <h4>Web Design</h4>
+                                <p>Simple and clean website designs.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="cards"class="card p-4">
+                                <h4>Frontend Development</h4>
+                                <p>Responsive layouts using Bootstrap.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="cards" class="card p-4">
+                                <h4>Student Projects</h4>
+                                <p>Beginner-friendly web projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="section-padding">
+                <div id="my_projects"class="container">
+                    <h2 class="text-center mb-5">My Projects</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/Login_system.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5>Login System</h5>
+                                    <p>Simple login page.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="certifications" class="section-padding bg-rgba(20, 23, 32)">
+            <div class="container">
+                <h2 class="text-center mb-5">Certifications</h2>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="card p-4" id="cards">
+                            <i class="bi bi-award fs-1 text-primary mb-3"></i>
+                            <h5>Web Development Basics</h5>
+                            <p>HTML, CSS, and Bootstrap fundamentals</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4" id="cards">
+                            <i class="bi bi-shield-lock fs-1 text-primary mb-3"></i>
+                            <h5>Introduction to Cybersecurity</h5>
+                            <p>Basic security concepts and threats</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4" id="cards">
+                            <i class="bi bi-patch-check fs-1 text-primary mb-3"></i>
+                            <h5>IT Fundamentals</h5>
+                            <p>Computer systems and networking basics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- 🔹 Education Section -->
+        <section id="education" class="section-padding">
+            <div class="container">
+                <h2 class="text-center mb-5">Education</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card p-4" id="cards">
+                            <h4>2nd Year Bachelor of Science in Information Technology</h4>
+                            <p class="mb-1"><strong>University of Mindanao</strong></p>
+                            <p class="text-muted">2024 – Present</p>
+                            <p>
+                                Focused on web development, programming fundamentals,
+                                and information security concepts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 id="contacts"class="text-center mb-5">Contact Me</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form>
+                            <input type="text" class="form-control mb-3" placeholder="Name">
+                            <input type="email" class="form-control mb-3" placeholder="Email">
+                            <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+                            <button class="btn btn-primary w-100">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="text-center py-4">
+            <div class="container">
+                <div class="mb-3">
+                    <a href="https://www.facebook.com/uniminofficial" class="text-white me-3 fs-4" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://github.com/lSPRIKITIK" class="text-white me-3 fs-4" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/login" class="text-white me-3 fs-4" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="mailto:j.banico.555860@umindanao.edu.ph" class="text-white fs-4"><i class="bi bi-envelope-fill"></i></a>
+                </div>
+                <p class="mb-0">© 2026 John Kyle Banico | All Rights Reserved</p>
+            </div>
+        </footer>
+        <script>
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        const bootstrapCollapse = new bootstrap.Collapse(navbarCollapse);
+                        bootstrapCollapse.hide();
+                    }
+                });
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
